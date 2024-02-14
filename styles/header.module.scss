@@ -1,0 +1,85 @@
+// ================== style ================= //
+.header {
+  padding:10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  // background-color: red;
+  justify-content: center;
+  gap: 10px;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  .nav_item  {
+
+    .nav_link {
+      transition: all 0.5s ease ;
+      padding: 6px 10px;
+      border-radius: 10px;
+
+    }
+    &:hover{
+
+      .nav_link {
+        background: linear-gradient(90deg, #525FE1 -3.7%, #2E3899 102.51%);
+        color: white;
+
+      }
+    }
+  }
+}
+
+.responsive__menue{
+  display: none;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.user__acount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.btn_primary {
+  padding:  8px 10px ;
+  background-color: #525FE1;
+  border-radius:10px;
+  color: white;
+}
+
+
+
+
+//  =====================  reaposnsive ============== //
+
+
+@media only screen and (max-width:836px) {
+
+  .responsive__menue {
+    display: block;
+  }
+  .navbar {
+    display: none;
+  }
+  .login {
+    display: none;
+  }
+  .user__acount {
+    display: none;
+  }
+}
+
