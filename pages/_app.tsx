@@ -28,7 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
 	}, [Router])
 
 	return (
-		<NextUIProvider navigate={router.push}>
+		<NextUIProvider  navigate={router.push}>
 			<NextThemesProvider>
 				{isLoading && <Loader/>}
 				<Component {...pageProps} />
