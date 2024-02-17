@@ -20,10 +20,10 @@ export default function Pgae() {
                     </div>
                     <div className={styles.description_box}>
                         <div className={styles.description_box_header}>
-                            <h1 className={styles.description_box_header_h1}>Specialized course to get familiar with the
-                                IELTS
-                                exam
-                                (special for academic and general exam candidates)</h1>
+                            <h1 className={styles.description_box_header_h1}>دوره تخصصی آشنایی با
+                                 آیلتس
+                                 امتحان
+                                 (ویژه داوطلبان آزمون های علمی و عمومی)</h1>
                             <div className={styles.icon_video}>
                                 <span>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -35,9 +35,9 @@ export default function Pgae() {
                             </div>
                         </div>
                         <div className={styles.description_box_description}>
-                            <p>IELTS self-study planning and study course (special for academic and general test
-                                candidates)
-                                Undoubtedly, to succeed in the IELTS test, you must plan for the IELTS...</p>
+                            <p>دوره برنامه ریزی و مطالعه خودآموز آیلتس (ویژه آزمون آکادمیک و جنرال).
+                                 نامزدهای)
+                                 بدون شک برای موفقیت در آزمون آیلتس باید برای آیلتس برنامه ریزی کرد...</p>
                         </div>
                         <div className={styles.description_box_buttons}>
                             <div className={styles.price_box}>
@@ -48,7 +48,7 @@ export default function Pgae() {
                                 </p>
                             </div>
                             <button className={styles.price_button}>
-                                add to cart
+                            به سبد خرید اضافه کنید
                             </button>
                         </div>
                     </div>
@@ -57,46 +57,46 @@ export default function Pgae() {
 
                     <div className={styles.content_video}>
                         <h1 className={styles.content_video_header}>
-                            IELTS self-study planning and study course (special for academic and general exam
-                            candidates)
+                        دوره برنامه ریزی و مطالعه خودآموز آیلتس (ویژه آزمون آکادمیک و عمومی
+                             نامزدهای)
                         </h1>
                         <p className={styles.content_video_desc}>
-                            Undoubtedly, in order to succeed in the IELTS test, we must prioritize IELTS planning in all
-                            our
-                            efforts. The characteristic of an ideal planning is the ability to calculate time and also
-                            the
-                            ability to measure the progress of that program over time.
+                        بدون شک برای موفقیت در آزمون آیلتس باید برنامه ریزی آیلتس را در همه موارد در اولویت قرار دهیم.
+                             ما
+                             تلاش ها. ویژگی یک برنامه ریزی ایده آل، توانایی محاسبه زمان و همچنین
+                             را
+                             توانایی اندازه گیری پیشرفت آن برنامه در طول زمان.
 
-                            Many candidates for the IELTS test, especially people who want to prepare for this test by
-                            self-teaching or self-study, come across common questions, such as:
+                             بسیاری از داوطلبان آزمون آیلتس به خصوص افرادی که می خواهند برای این آزمون آماده شوند
+                             خودآموزی یا خودآموزی، با سؤالات رایجی مواجه می شوید، مانند:
 
-                            For each IELTS test skill, which source should I read among all these sources?
+                             برای هر مهارت آزمون آیلتس کدام منبع را از بین این همه منبع بخوانم؟
 
-                            What is the correct way to practice speaking?
+                             روش صحیح تمرین صحبت کردن چیست؟
 
-                            What should I do to improve reading?
+                             برای بهبود خواندن چه باید بکنم؟
 
-                            What resources are recommended to improve listening at my level?
+                             چه منابعی برای بهبود گوش دادن در سطح من توصیه می شود؟
 
-                            Also, many candidates have problems to properly plan their studies
+                             همچنین بسیاری از داوطلبان برای برنامه ریزی مناسب مطالعات خود با مشکل مواجه هستند
 
-                            In this course, all the questions and concerns of your way to study IELTS will be answered
-                            so that
-                            you can reach your goal with more seriousness and perseverance.
+                             در این دوره به تمامی سوالات و دغدغه های شما برای تحصیل آیلتس پاسخ داده می شود
+                             به طوری که
+                             شما می توانید با جدیت و پشتکار بیشتر به هدف خود برسید.
 
-                            Course instructor: Dr. Mehdi Modares (IELTS Mock Examiner)
+                             مدرس دوره: دکتر مهدی مدرس (ممتحن آزمایشی آیلتس)
 
-                            Number of sessions: three training sessions
+                             تعداد جلسات: سه جلسه آموزشی
 
-                            Support: Yes
+                             پشتیبانی: بله
 
-                            Time validity of the course: one year
+                             مدت اعتبار دوره: یک سال
 
-                            Minimum level required for course registration: 4 IELTS
+                             حداقل سطح مورد نیاز برای ثبت نام دوره: 4 آیلتس
 
-                            Telegram support: Membership in the Telegram group to receive useful links, as well as
-                            interaction
-                            with the participants and questions and answers with the course professor
+                             پشتیبانی تلگرام: عضویت در گروه تلگرام برای دریافت لینک های مفید و همچنین
+                             اثر متقابل
+                             با شرکت کنندگان و پرسش و پاسخ با استاد دوره
                         </p>
                     </div>
                     <div className={styles.siebars}>
@@ -119,8 +119,8 @@ export default function Pgae() {
                                     </span>
                                 </div>
                                 <div className={styles.item_header}>
-                                    <span className={styles.top_header}>Main category</span>
-                                    <h1>language teaching</h1>
+                                    <span className={styles.top_header}>دسته اصلی</span>
+                                    <h1>آموزش زبان</h1>
                                 </div>
                             </div>
                             <div className={styles.sidebar_item}>
