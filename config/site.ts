@@ -5,23 +5,23 @@ export const siteConfig = {
 	description: "Make beautiful websites regardless of your design experience.",
 	navItems: [
 		{
-			label: "Home",
+			label: "خانه",
 			href: "/",
 		},
 		{
-			label: "Docs",
-			href: "/docs",
+			label: "محصولات",
+			href: "/products",
 		},
 		{
-			label: "Pricing",
+			label: "فروشگاه",
 			href: "/pricing",
 		},
 		{
-			label: "Blog",
+			label: "وبلاگ",
 			href: "/blog",
 		},
 		{
-			label: "About",
+			label: "درباره ما",
 			href: "/about",
 		}
 	],
@@ -65,5 +65,6 @@ export const siteConfig = {
 		docs: "https://nextui-docs-v2.vercel.app",
 		discord: "https://discord.gg/9b6yyZKmH4",
 		sponsor: "https://patreon.com/jrgarciadev"
+		
 	},
 };

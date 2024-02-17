@@ -28,7 +28,7 @@ import {
 } from "@/components/icons";
 
 import { Logo } from "@/components/icons";
-import { Login } from "iconsax-react";
+import { Login, LoginCurve, UserAdd } from "iconsax-react";
 import { symbolName } from "typescript";
 import styles from '@/styles/navbar.module.scss'
 
@@ -38,20 +38,15 @@ export const Navbar = () => {
 		<NextUINavbar  position="sticky" className={styles.navbar_width}>
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand className="gap-3 max-w-fit">
-					<NextLink className="flex justify-start items-center gap-1" href="/">
+					<NextLink className="flex justify-start items-center gap-1	" href="/">
 						<Logo />
 						<p className="font-bold text-inherit">ACME</p>
 					</NextLink>
 				</NavbarBrand>
-				<div className="hidden lg:flex gap-4 justify-start ml-2">
+				<div className="hidden lg:flex gap-5 justify-start ml-2 mx-10">
 					{siteConfig.navItems.map((item) => (
-						<NavbarItem key={item.href}>
+						<NavbarItem key={item.href}  className={`${styles.navitem}`}>
 							<NextLink
-								className={clsx(
-									linkStyles({ color: "foreground" }),
-									"data-[active=true]:text-primary data-[active=true]:font-medium"
-								)}
-								color="foreground"
 								href={item.href}
 							>
 								{item.label}
@@ -68,9 +63,9 @@ export const Navbar = () => {
 						isExternal
 						as={Link}
 						className="text-md font-bold text-default-600 bg-0  hover:bg-blue-200 "
-				
 					>
-						IOG IN
+					ورود	
+									
 					</Button>
 					<Button
 						isExternal
@@ -78,7 +73,10 @@ export const Navbar = () => {
 						className="text-md font-bold  bg-blue-500 text-white  px-5"
 					
 					>
-						Sing Up
+						<span>
+							<UserAdd />
+						</span>
+						ثبت نام
 					</Button>
 				</NavbarItem>
 			</NavbarContent>

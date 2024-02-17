@@ -1,6 +1,7 @@
 .bradcump {
     margin-top: 20px;
     //background-color:#525FE1;
+    padding-right:20px ;
     margin-left: auto;
     margin-right: auto;
     background: url("../public/bread.svg") no-repeat center ;
@@ -9,6 +10,7 @@
     padding: 10px;
     .brsdcump__content {
         padding: 14px 0 ;
+        margin-right:20px ;
     }
     .brsdcump__item {
         display: flex;
@@ -21,7 +23,7 @@
             font-weight: 300;
             &.active {
                 color: white;
-                font-size: 18px;
+                font-size: 16px;
                 font-weight: 700;
             }
 

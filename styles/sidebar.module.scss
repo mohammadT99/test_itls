@@ -26,3 +26,17 @@
         
     }
 }
+
+
+
+// -------------------------- responsive--------------//
+@media only  screen and (max-width:310px) {
+    .content_product_list {
+        display: flex;
+        flex-direction: column;
+    }
+        .content_products {
+            display: flex;
+            flex-direction: column;
+        }
+}

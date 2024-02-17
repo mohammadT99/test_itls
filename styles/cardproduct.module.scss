@@ -25,10 +25,11 @@
         display: flex;
         justify-content: space-between;
         margin-inline: 18px;
+        
 
         p {
             font-size: 22px;
-            font-weight: 700;
+            font-weight: 500;
         }
 
         padding:6px;
@@ -42,19 +43,23 @@
         padding: 10px 72px !important;
         position: absolute;
         top: -120px;
-        left: 90px;
+        right: 90px;
         
     }
 }
 
 .btn {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
 
     padding: 14px 10px;
     border-radius: 10px;
-    width: 173px;
+    width: max-content;
     height: 47px;
     font-size: 16px;
-    font-weight: 600;
+    // font-weight: 600;
 
     
 }
@@ -62,7 +67,7 @@
 .cardbtn {
     position: relative;
     top: -20px;
-    left: 90px;
+    right:   90px;
     // right: 50%;
     
     

@@ -17,12 +17,12 @@ const Index = () => {
     return (
         <>
             <Navbar />
-            <Breadcrumb links='product' links_before=''/>
-            <div className={`flex justify-center gap-5 mt-3 align-top`}>
+            <Breadcrumb links='محصولات' links_before=''/>
+            <div className={styles.content_products}>
                 
-            <div className={` flex gap-1 justify-end `}>
-            <CardProduct image_link={ImageTest}/>
-            <CardProduct image_link={ImageTest}/>
+            <div className={` flex gap-1 justify-end ${styles.content_product_list}`}>
+            <CardProduct image_link={ImageTest} card_title='کتاب 16' />
+            <CardProduct image_link={ImageTest} card_title='کتاب 16' />
             <CardProduct image_link={ImageTest}/>
             </div>   
             <Sidebar />

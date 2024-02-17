@@ -1,4 +1,5 @@
 import styles from '@/styles/cardproduct.module.scss' ;
+import { Bag } from 'iconsax-react';
 import Image from 'next/image';
 export default function CardProduct ({image_link , image__alt='' , card_title='test'}) {
     return (
@@ -16,7 +17,12 @@ export default function CardProduct ({image_link , image__alt='' , card_title='t
                   <span className={`text-blue-400 text-lg font-semibold`}>1000</span>
                 </div>
               </div>
-              <button className={`${styles.btn} bg-yellow-500 ${styles.cardbtn} transition-all`}>BUY</button>
+              <button className={`${styles.btn} bg-yellow-500 ${styles.cardbtn} transition-all`}>
+                <span>
+                  <Bag />
+                </span>
+                افزودن به سبد خرید
+              </button>
             </div>
         </>
     )

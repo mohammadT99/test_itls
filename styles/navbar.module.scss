@@ -1,8 +1,22 @@
 .navbar_width {
     // 
+    margin-top: 10px;
     header {
         max-width: 1480px !important;
         justify-content: center !important;
         align-items: center;
+    }
+}
+
+.navitem {
+   animation: navitem 0.5s ease;
+   padding: 6px;
+   border-radius: 5px;
+   &.active{
+    border: 1px solid #525FE1;
+   }
+    &:hover {
+    color: #525FE1 !important;
+      border-bottom: 1px solid #525FE1;
     }
 }
