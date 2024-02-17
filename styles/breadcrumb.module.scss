@@ -1,13 +1,15 @@
 .bradcump {
     margin-top: 20px;
-    //background-color:#525FE1;
-    padding-right:20px ;
-    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-inline: auto;
+    //justify-content: center;
     margin-right: auto;
     background: url("../public/bread.svg") no-repeat center ;
     border-radius: 10px;
     width: 1440px;
     padding: 10px;
+
     .brsdcump__content {
         padding: 14px 0 ;
         margin-right:20px ;

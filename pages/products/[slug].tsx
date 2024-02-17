@@ -12,7 +12,7 @@ export default function Pgae() {
     return (
         <>
             <Navbar />
-            <Breadcrumb links='product' />
+            <Breadcrumb links='محصولات' links_before={'محصول1'} />
             <section className={styles.contentProduct}>
                 <div className={styles.video_card}>
                     <div className={styles.video_box}>

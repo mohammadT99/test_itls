@@ -16,7 +16,7 @@ export default function Breadcrumb({ links_before = 'ارشیو', links = 'مح�
                             {links_before?(<a href="" className={styles.item_link}>{links_before}</a>):null}
                             
                            {links_before?( <span>
-                            <ArrowLeft2 />
+                            <ArrowLeft2 color="#fff" />
                            </span>):null}
                             <a href="" className={`${styles.item_link} ${styles.active}`}>{links}</a>
                         </div>
