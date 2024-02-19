@@ -11,6 +11,10 @@ import { availableParallelism } from 'os';
 import Api from '@/libs/axios' ;
 import { Erica_One } from 'next/font/google';
 import DefaultLayout from "@/layouts/default";
+import CardLoarder from "@/components/CardLoader";
+import {toast} from "react-toastify";
+import {pop} from "@jridgewell/set-array";
+import {setTime} from "@internationalized/date/src/manipulation";
 
 
 
@@ -29,14 +33,21 @@ fetch(`http://185.164.73.28:8000/api/v1/products/list`)
 
 })
 
+    setTimeout(()=>{
+        if(product.length === 0 ) {
+            toast('مشکلی به وجود امده لطفا دوباره امتحان کنید!!') ;
+        }
+    } , 5000)
+
 }
 
-console.log( 'test', product)
+
+
 
 
 useEffect(() => {
     showProduct() ;
-} , []) 
+} , []) ;
 
     return (
         <>
@@ -45,13 +56,26 @@ useEffect(() => {
                 <Breadcrumb links='محصولات' links_before=''/>
                 <div className={styles.content_products}>
 
-                    <div className={` flex gap-1 justify-end ${styles.content_product_list}`}>
-                        {product.map((item , key ) => {
-                            return(
+                    <div className={` flex gap-1 justify-end items-start ${styles.content_product_list}`}>
+                        {
+                            product.length === 0 ? (
 
-                                <CardProduct data={item}/>
+                                <div className='mt-3 flex gap-6'>
+                                    <CardLoarder />
+                                    <CardLoarder />
+                                    <CardLoarder />
+                                </div>
+                            ) :(
+                              <>
+                                  {product.map((item , key ) => {
+                                      return(
+
+                                          <CardProduct data={item}/>
+                                      )
+                                  })}
+                              </>
                             )
-                        })}
+                        }
                     </div>
                     <Sidebar />
                 </div>

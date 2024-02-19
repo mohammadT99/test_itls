@@ -3,7 +3,7 @@ import { Bag } from 'iconsax-react';
 import { Button, Image, Link } from '@nextui-org/react';
 
 
-export default function CardProduct ({data }) {
+export default function CardProduct ({ data }) {
     return (
         <>
          <div className={styles.courses__card}>
