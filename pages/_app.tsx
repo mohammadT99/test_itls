@@ -7,6 +7,7 @@ import "@/styles/globals.css";
 import {useEffect , useState} from "react";
 import {Router, useRouter} from 'next/router';
 import Loader from "@/components/Global/Loader/Loader";
+import "/public/kalame/stylesheet.scss";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();

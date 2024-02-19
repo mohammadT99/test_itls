@@ -1,10 +1,17 @@
+.contentProduct {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .video_card {
   display: flex;
-  gap: 50px;
-  color: #ccc;
-  justify-content: center;
-  align-items: center;
+  //gap: 50px;
+  //color: #ccc;
+  justify-content: space-between;
+  align-items: flex-start;
   margin-top:20px ;
+
 }
 
 .video_box {
@@ -19,14 +26,16 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 20px;
   border-radius: 10px;
+  width: 700px;
+  height: 350px;
 }
 
 .description_box_header {
   display: flex;
-  gap: 24px;
+  justify-content: space-between;
 
   .description_box_header_h1 {
-    width: 500px;
+    //width: 500px;
     //font-size:18px ;
     font-weight: 600;
   }
@@ -71,7 +80,7 @@
 }
 
 .description_box_buttons {
-  margin-top: 50px;
+  margin-top: 130px;
   display: flex;
   justify-content: space-between;
   .price_box {
@@ -223,8 +232,11 @@
 .content_products {
   margin-top: 20px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start ;
+  padding-inline: 50px;
+  gap: 12px;
+
 
 }
 
