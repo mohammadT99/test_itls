@@ -5,9 +5,10 @@ import Image from "next/image";
 
 import {Comment} from "postcss";
 import {Messages2} from "iconsax-react";
+import {Link} from "@nextui-org/link";
 export default function  CardBlog (){
 
-    const article:array = [
+    const article= [
         {
             title:'روش های یادگیری زبان' ,
             description:''
@@ -15,7 +16,7 @@ export default function  CardBlog (){
     ]
     return (
         <>
-            <div className={styles.card_blog}>
+            <Link className={styles.card_blog} href={'/blog/test'}>
                 <Image src={imageblog} alt={''} />
                 <div className={styles.title}>
                     <p>اموزش زبان</p>
@@ -38,7 +39,7 @@ export default function  CardBlog (){
                         <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود</p>
                     </div>
                 </div>
-            </div>
+            </Link>
         </>
     )
 }

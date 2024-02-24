@@ -1,21 +1,12 @@
 import styles from '@/styles/package.module.scss';
-import ImageTest from '@/public/Images/imageProduct.png';
-import Image from "next/image";
-import Header from "@/components/Global/Header/Header";
-import { Navbar } from "@/components/navbar";
 import { useEffect, useState } from 'react';
 import Breadcrumb from '@/components/bradcrump';
 import CardProduct from '@/components/CradProduct';
 import Sidebar from '@/components/Sidebar';
-import { availableParallelism } from 'os';
-import Api from '@/libs/axios' ;
-import { Erica_One } from 'next/font/google';
+
 import DefaultLayout from "@/layouts/default";
 import CardLoarder from "@/components/CardLoader";
 import {toast} from "react-toastify";
-import {pop} from "@jridgewell/set-array";
-import {setTime} from "@internationalized/date/src/manipulation";
-
 
 
 const Index = () => {
@@ -60,7 +51,7 @@ useEffect(() => {
                         {
                             product.length === 0 ? (
 
-                                <div className='mt-3 flex gap-6'>
+                                <div className={`mt-3 flex gap-6 ${styles.loader_card}`}>
                                     <CardLoarder />
                                     <CardLoarder />
                                     <CardLoarder />

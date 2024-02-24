@@ -7,6 +7,12 @@
 | reset css from project
 */
 
+
+.container-box{
+    width: 100%;
+    max-width: 1440px;
+}
+
 html,
 body,
 div,

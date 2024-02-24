@@ -1,107 +1,89 @@
-import {
-	Button,
-	Kbd,
-	Link,
-	Input,
-	Navbar as NextUINavbar,
-	NavbarContent,
-	NavbarMenu,
-	NavbarMenuToggle,
-	NavbarBrand,
-	NavbarItem,
-	NavbarMenuItem,
-} from "@nextui-org/react";
-
-import { link as linkStyles } from "@nextui-org/theme";
-
-import { siteConfig } from "@/config/site";
-import NextLink from "next/link";
-import clsx from "clsx";
-
-import { ThemeSwitch } from "@/components/theme-switch";
-import {
-	TwitterIcon,
-	GithubIcon,
-	DiscordIcon,
-	HeartFilledIcon,
-	SearchIcon,
-} from "@/components/icons";
-
-import { Logo } from "@/components/icons";
-import { Login, LoginCurve, UserAdd } from "iconsax-react";
-import { symbolName } from "typescript";
+import React from "react";
+import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
+import Logo from "@/public/Images/logo.png";
 import styles from '@/styles/navbar.module.scss'
+import Image from "next/image";
+import config from "tailwindcss/defaultConfig";
+import {siteConfig} from "@/config/site";
 
-export const Navbar = () => {
+export default function NavbarSite() {
+	const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+	const menuItems = [
+		"Profile",
+		"Dashboard",
+		"Activity",
+		"Analytics",
+		"System",
+		"Deployments",
+		"My Settings",
+		"Team Settings",
+		"Help & Feedback",
+		"Log Out",
+	];
 
 	return (
-		<NextUINavbar  position="sticky" className={styles.navbar_width}>
-			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
-				<NavbarBrand className="gap-3 max-w-fit">
-					<NextLink className="flex justify-start items-center gap-1	" href="/">
-						<Logo />
-						<p className="font-bold text-inherit">ACME</p>
-					</NextLink>
-				</NavbarBrand>
-				<div className="hidden lg:flex gap-5 justify-start ml-2 mx-10">
-					{siteConfig.navItems.map((item) => (
-						<NavbarItem key={item.href}  className={`${styles.navitem}`}>
-							<NextLink
-								href={item.href}
-							>
-								{item.label}
-							</NextLink>
-						</NavbarItem>
-					))}
-				</div>
+		<Navbar
+			isBordered
+			isMenuOpen={isMenuOpen}
+			onMenuOpenChange={setIsMenuOpen}
+			className={`${styles.navbar_width}`}
+		>
+			<NavbarContent className="sm:hidden" justify="start">
+				<NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
 			</NavbarContent>
 
-      <NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
-				
-				<NavbarItem className=" flex gap-2 md:flex">
-					<Button
-						isExternal
-						as={Link}
-						className="text-md font-bold text-default-600 bg-0  hover:bg-blue-200 "
-					>
-					ورود	
-									
-					</Button>
-					<Button
-						isExternal
-						as={Link}
-						className="text-md font-bold  bg-blue-500 text-white  px-5"
-					
-					>
-						<span>
-							<UserAdd />
-						</span>
-						ثبت نام
+			<NavbarContent className="sm:hidden pr-3" justify="center">
+				<NavbarBrand>
+					<Image src={Logo} alt={''} />
+					<p className="font-bold text-inherit">ITLS</p>
+				</NavbarBrand>
+			</NavbarContent>
+
+			<NavbarContent className="hidden sm:flex gap-4" justify="center">
+				<NavbarBrand>
+					<Image src={Logo} alt={''} />
+					<p className="font-bold text-inherit">ITLC</p>
+				</NavbarBrand>
+				{siteConfig.navItems.map((item)=>{
+					return (
+						<NavbarItem>
+							<Link color="foreground" href={item.href} className={styles.navitem}>
+								{item.label}
+							</Link>
+						</NavbarItem>
+					)
+				})}
+
+			</NavbarContent>
+
+			<NavbarContent justify="end">
+				<NavbarItem className="hidden lg:flex">
+					<Link href="/login">Login</Link>
+				</NavbarItem>
+				<NavbarItem>
+					<Button as={Link} color="warning" href="/login" variant="flat">
+						Sign Up
 					</Button>
 				</NavbarItem>
 			</NavbarContent>
-      <NavbarMenu>
-				
-				<div className="mx-4 mt-2 flex flex-col gap-2">
-					{siteConfig.navMenuItems.map((item, index) => (
-						<NavbarMenuItem key={`${item}-${index}`}>
-							<Link
-								color={
-									index === 2
-										? "primary"
-										: index === siteConfig.navMenuItems.length - 1
-										? "danger"
-										: "foreground"
-								}
-								href="#"
-								size="lg"
-							>
-								{item.label}
-							</Link>
-						</NavbarMenuItem>
-					))}
-				</div>
+
+			<NavbarMenu className={`mt-5`}>
+				{siteConfig.navMenuItems.map((item, index) => (
+					<NavbarMenuItem key={`${item}-${index}`}>
+						<Link
+							className="w-full"
+							color={
+								index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
+							}
+							href={item.href}
+							size="lg"
+						>
+							{item.label}
+						</Link>
+					</NavbarMenuItem>
+				))}
 			</NavbarMenu>
-		</NextUINavbar>
+		</Navbar>
 	);
-};
+}

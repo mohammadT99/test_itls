@@ -39,8 +39,33 @@
     flex-direction: column;
 }
 
-@media only  screen and (max-width: 760px) {
+@media only  screen and (max-width: 768px) {
     .bradcump {
-        border-radius: 0;
+        width: 730px;
+        border-radius: 10px ;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .bradcump{
+        width:400px;
+        border-radius: 10px;
+
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .bradcump{
+        width:350px;
+        border-radius: 10px;
+
+    }
+}
+
+@media only screen and (max-width:320px) {
+    .bradcump{
+        width:300px;
+        border-radius: 10px;
+
     }
 }

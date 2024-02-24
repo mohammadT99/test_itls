@@ -4,7 +4,7 @@ import {Card, Skeleton} from "@nextui-org/react";
 export default  function CardLoarder () {
     return (
         <>
-            <Card className="w-[200px] space-y-5 p-4" radius="lg">
+            <Card className={`w-[250px]  space-y-5 p-4  `} radius="lg">
                 <Skeleton className="rounded-lg">
                     <div className="h-40 rounded-lg bg-default-300"></div>
                 </Skeleton>
