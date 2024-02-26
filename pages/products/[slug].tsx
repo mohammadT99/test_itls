@@ -2,16 +2,17 @@ import styles from '@/styles/package.module.scss';
 import ImageTest from '@/public/Images/imageProduct.png';
 import Image from "next/image";
 import Header from "@/components/Global/Header/Header";
-import { Navbar } from "@/components/navbar";
+
 import { useEffect, useState } from 'react';
 import Breadcrumb from '@/components/bradcrump';
 import { useRouter } from 'next/router';
+import DefaultLayout from "@/layouts/default";
 
-export default function Pgae() {
-    const router = useRouter();
+export default function Page() {
+
     return (
         <>
-            <Navbar />
+        <DefaultLayout>
             <Breadcrumb links='محصولات' links_before={'محصول1'} />
             <section className={styles.contentProduct}>
                 <div className={styles.video_card}>
@@ -246,6 +247,7 @@ export default function Pgae() {
                     </div>
                 </div>
             </section>
+        </DefaultLayout>
         </>
     )
 }
