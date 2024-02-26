@@ -16,7 +16,7 @@ const [loading  , setLoading ] = useState(true) ;
 
 const showProduct =  () => {
   
-fetch(`http://185.164.73.28:8000/api/v1/products/list`)
+fetch(`https://fakestoreapi.com/products`)
 .then((res) => res.json())
 .then((data) => {
     setProduct(data)
@@ -25,7 +25,7 @@ fetch(`http://185.164.73.28:8000/api/v1/products/list`)
 })
 
     setTimeout(()=>{
-        if(product.length === 0 ) {
+        if(!product) {
             toast('مشکلی به وجود امده لطفا دوباره امتحان کنید!!') ;
         }
     } , 5000)
@@ -61,7 +61,7 @@ useEffect(() => {
                                   {product.map((item , key ) => {
                                       return(
 
-                                          <CardProduct data={item}/>
+                                          <CardProduct key={key} data={item}/>
                                       )
                                   })}
                               </>

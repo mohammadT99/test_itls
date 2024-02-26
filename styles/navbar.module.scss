@@ -10,13 +10,22 @@
 
 .navitem {
    animation: navitem 0.5s ease;
-   padding: 6px;
-   border-radius: 5px;
+   padding: 0.5rem;
+   border-radius: 0.5rem;
+   font-size: 1rem !important;
+   font-weight: 500;
    &.active{
-    border: 1px solid #525FE1;
+    border: 0.02rem solid #525FE1;
    }
     &:hover {
     color: #525FE1 !important;
       border-bottom: 1px solid #525FE1;
     }
+}
+
+.login_btn{
+  background:#525FE1 ;
+  color: white;
+  font-size:1rem;
+  font-weight: 600;
 }

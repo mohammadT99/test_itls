@@ -4,6 +4,7 @@ import { Head } from "./head";
 import Footer from "@/components/Global/Header/Footer";
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+// import '@/styles/globals.css'
 
 
 
@@ -33,7 +34,7 @@ export default function DefaultLayout({
 				// className={'bg-red'}
 				theme="light"
 			/>
-			<main className={`container mx-auto px-8 kalameh`}>
+			<main className={`container-box`}>
 				{children}
 			</main>
 			{/*<Footer />*/}

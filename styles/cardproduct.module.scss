@@ -2,11 +2,14 @@
     display: flex;
     gap: 10px;
     justify-content: flex-end;
+    //width: 100%;
+    //max-width: 450px;
 }
 
 .courses__card {
-    height: 250px;
-    padding: 18px;
+    width: 100% ;
+    max-width: 460px;
+    //padding: 18px;
     transition: all 1s ease;
     
 
@@ -15,6 +18,8 @@
         box-shadow: 0px 13px 28px 0px rgba(0, 0, 0, 0.06), 0px 51px 51px 0px rgba(0, 0, 0, 0.05), 0px 116px 69px 0px rgba(0, 0, 0, 0.03), 0px 206px 82px 0px rgba(0, 0, 0, 0.01), 0px 322px 90px 0px rgba(0, 0, 0, 0.00);
         border-radius: 10px;
         padding-bottom: 30px;
+        overflow: hidden;
+        //column-gap: 12px;
     }
 
     .courses__card {
@@ -25,6 +30,7 @@
         display: flex;
         justify-content: space-between;
         margin-inline: 18px;
+        margin-block: 15px;
         
 
         p {
@@ -36,11 +42,9 @@
     }
 
     .btn-card {
-        // z-index: 1;
         margin-top: 100px;
-        // margin-left: auto;
-        // margin-right: auto;
-        padding: 10px 72px !important;
+        padding: 14px 72px !important;
+        height: 64px;
         position: absolute;
         top: -120px;
         right: 90px;
@@ -67,14 +71,16 @@
 .cardbtn {
     position: relative;
     top: -20px;
-    right:   90px;
+    right:  90px;
+    //height: 45px;
+    padding: 16px 70px;
 
 }
 
 .card__item__img {
-    width: 350px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+    //width: 100%px;
+    //border: 1px solid #ccc;
+    border-radius: 0px !important;
     overflow: hidden;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    //box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
