@@ -37,7 +37,7 @@ export default function DefaultLayout({
 			<main className={`container-box`}>
 				{children}
 			</main>
-			{/*<Footer />*/}
+			<Footer />
 		</div>
 	);
 }

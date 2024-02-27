@@ -10,6 +10,8 @@ import Banner from "@/components/Banner";
 import AboutSection from "@/components/About";
 import Courses from "@/components/courses";
 import AboutCompany from "@/components/AboutCompany";
+import Programmer from "@/components/Programmer";
+import SayStudentSection from "@/components/SayStudent";
 
 export default function IndexPage() {
 	return (
@@ -18,6 +20,8 @@ export default function IndexPage() {
 			<AboutSection/>
 			<Courses/>
 			<AboutCompany />
+			<Programmer />
+			<SayStudentSection/>
 		</DefaultLayout>
 	);
 }
