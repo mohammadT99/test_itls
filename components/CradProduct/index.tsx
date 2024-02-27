@@ -12,10 +12,10 @@ export default function CardProduct ({ data }):any {
          <div className={styles.courses__card}>
               <div className={styles.card__item}>
                 <div className={styles.card__item__img}>
-                  <Image src={ImageProduct} alt={''}/>
+                  <Image src={ImageProduct} alt={''} className={styles.card__item__img__imgtag}/>
                 </div>
                 <div className={styles.card__item__body}>
-                  <p>{data.title ?data.title : 'محصول شماره یک' }</p>
+                  <p>{ data.title ? data.title : 'محصول شماره یک' }</p>
                   <span className={`text-blue-400 text-lg font-semibold`}>${data.price ? data.price : '250'}</span>
                 </div>
               </div>
