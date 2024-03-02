@@ -74,9 +74,11 @@ export default function Banner() {
                             </div>
                         </div>
                     </div>
-                    <Image src={ImageEndBanner} className={styles.banner__content__end} alt={''}>
+                    <div className={styles.banner__content__end}>
+                        <Image src={ImageEndBanner} className={styles.banner__content__end__image} alt={''}>
+                        </Image>
+                    </div>
 
-                    </Image>
 
                     <div className={styles.content}>
                         <div className={styles.txt}>
@@ -96,7 +98,7 @@ export default function Banner() {
                             <span>مجموع دوره ها</span>
                         </div>
                     </div>
-                    <div >
+                    <div>
                     </div>
                 </div>
             </section>

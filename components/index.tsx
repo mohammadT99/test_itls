@@ -17,9 +17,6 @@ export default  function  SidebarBlog (){
                 <div className={styles.sidebar_blog_item}>
                     <p>test</p>
                 </div>
-                <div className={styles.sidebar_blog_item}>
-                    <p>test</p>
-                </div>
             </div>
 
         </>

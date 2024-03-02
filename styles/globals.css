@@ -168,8 +168,17 @@ body {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*justify-content: center;*/
 
+}
+
+/*media query */
+
+
+@media screen and (max-width: 320px) {
+    .container-box{
+        max-width: 300px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

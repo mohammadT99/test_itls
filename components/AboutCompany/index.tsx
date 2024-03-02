@@ -20,15 +20,15 @@ export default function AboutCompany() {
                         </p>
                     </div>
                     <div className={styles.company__video}>
-                        <Image src={ImageVideo} alt={''} />
+                        <Image src={ImageVideo} alt={''}/>
                         <span className={styles.video_icon}>
-                            <VideoCircle size='80' color={'#fff'} />
+                            <VideoCircle size='80' color={'#fff'}/>
                         </span>
                     </div>
                 </div>
                 <div className={styles.company__about__list}>
                     <div className={styles.about__company__circle}>
-                        <Image src={CircleImage}  alt={''} className={styles.company__about__list__circle}/>
+                        <Image src={CircleImage} alt={''} className={styles.company__about__list__circle}/>
                         <Image
                             className={styles.image}
                             src={Gilre}

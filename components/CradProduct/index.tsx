@@ -4,7 +4,11 @@ import { Button,  Link } from '@nextui-org/react';
 import ImageProduct from '@/public/Images/imageProduct.png'
 import Image from "next/image";
 // import '../../public/Images/imageProduct.png'
-
+interface Product {
+    title:string ,
+    price :number ,
+    cover : string
+}
 
 export default function CardProduct ({ data }):any {
     return (
